@@ -159,7 +159,7 @@ body {
   cursor: pointer;
 }
 
-.NavigationScrollingMenu > div:not(.OnlineMenuSection) {
+.NavigationScrollingMenu > a {
 
   display: flex;
   flex-direction: row;
@@ -174,7 +174,7 @@ body {
               inset -1px -1px 0 #A49C91;
   box-sizing: border-box;
 }
-.NavigationScrollingMenu > div:not(.OnlineMenuSection):hover {
+.NavigationScrollingMenu > a:hover {
   background-color: #1d7945;
 }
 .NavigationScrollingMenu img:not(.OnlineMenuSection) {
@@ -182,7 +182,7 @@ body {
   margin-left: 10px;
   margin-top: 4px;
 }
-.NavigationScrollingMenu > div> p {
+.NavigationScrollingMenu > a > p {
   margin: 0;
   color: black;
   font-family: "PixelOperatorMono";
