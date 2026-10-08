@@ -1,0 +1,236 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/*****FONTS*/
+@font-face {
+  font-family: "Minecraft";
+  src: url("./fonts/Minecraft.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PixelOperatorMono";
+  src: url("./fonts/PixelOperatorMono.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PixelOperator-Bold";
+  src: url("./fonts/PixelOperator-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+/**********************SCREEN***********************************/
+.screen {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.screen > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/************************NAVIGATION BAR************************/
+
+.NavigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 8px 0 2px;
+  background-color: #D4CABF;
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #77736C;
+  border-bottom: 2px solid #77736C;
+  box-shadow: inset 1px 1px 0 #EEE8DF,
+              inset -1px -1px 0 #A49C91;
+  box-sizing: border-box;
+}
+
+/**PARTIE 1**/
+.NavigationBarOpeningBoutton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: static;
+  width: auto;
+  height: 41px;
+  padding: 0 10px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  border-top: 2px solid #FFFFFF;
+  border-left: 2px solid #FFFFFF;
+  border-right: 2px solid #77736C;
+  border-bottom: 2px solid #77736C;
+  border-radius: 0;
+  box-shadow: inset 1px 1px 0 #EEE8DF,
+              inset -1px -1px 0 #A49C91;
+  background-color: #D4CABF;
+  cursor: pointer;
+}
+/**/
+
+.NavigationBarOpeningBoutton img {
+  display: block;
+  width: 36px;
+  height: 29px;
+  object-fit: contain;
+}
+.NavigationBarOpeningBoutton p {
+  margin: 0;
+  color: black;
+  font-family: "PixelOperatorMono";
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/**PARTIE 2**/
+.BatteryPart {
+  display: flex;
+  align-items: center;
+  /*gap: 8px;*/
+  position: static;
+  width: auto;
+  height: 41px;
+  padding: 0 6px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  /*border: 2px solid red;*/
+}
+.BatteryPart img {
+  display: block;
+  width: 70px;
+  height: 39px;
+  object-fit: contain;
+}
+.BatteryPart p {
+  margin: 0;
+  color: black;
+  font-family: "PixelOperatorMono";
+  font-weight: bold;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+
+/***************SCROLLING MENU******************/
+
+ .NavigationScrollingMenu {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	bottom: 44px;
+	width: 21%;
+	height: 265px;
+	padding: 0 3px 0 1px;
+	background-color: #D4CABF;
+	border-top: 2px solid #FFFFFF;
+	border-left: 2px solid #FFFFFF;
+	border-right: 2px solid #77736C;
+	border-bottom: 2px solid #77736C;
+	box-shadow: inset 1px 1px 0 #EEE8DF, inset -1px -1px 0 #A49C91;
+	box-sizing: border-box;
+  cursor: pointer;
+}
+
+.NavigationScrollingMenu > div:not(.OnlineMenuSection) {
+
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  height: 43px;
+  background-color: #D4CABF;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #77736C;
+  border-bottom: 1px solid #77736C;
+  box-shadow: inset 1px 1px 0 #EEE8DF,
+              inset -1px -1px 0 #A49C91;
+  box-sizing: border-box;
+}
+.NavigationScrollingMenu img:not(.OnlineMenuSection) {
+  height: 72%;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.NavigationScrollingMenu > div> p {
+  margin: 0;
+  color: black;
+  font-family: "PixelOperatorMono";
+  font-weight: bold;
+  font-size: 19px;
+  white-space: nowrap;
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+/*Section 1*/
+.OnlineMenuSection {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	width: 98%;
+	height: 74px;
+	background-color: #D4CABF;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #77736C;
+	border-bottom: 1px solid #77736C;
+	box-shadow: inset 1px 1px 0 #EEE8DF, inset -1px -1px 0 #A49C91;
+	box-sizing: border-box;
+}
+.OnlineMenuSection img:not(.AvatarPhoto){
+  display: block;
+  width: 63px;
+  height: 64px;
+  object-fit: contain;
+  margin-top: 4px;
+}
+.AvatarPhoto{
+ height: 70px;
+ margin-left: 10px;
+}
+/**/
+.AvatarPhotoAndDot {
+  background-color: #126837;
+  border-radius: 50px;
+  border: 2px solid #126837;
+  height: 9px;
+  width: 3%;
+  margin-left: 53px;
+  margin-top: 4px;
+  position: absolute;
+}
+.AvatarPhotoAndNameAndOnlineStatus > p {
+  margin: 0;
+  color: black;
+  font-family: "PixelOperatorMono";
+  font-weight: bold;
+  font-size: 18px;  
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-top: 6px
+}
+
+.AvatarPhotoAndNameAndOnlineStatus p:nth-of-type(2) {
+  color:#1d7945;
+}
