@@ -28,6 +28,13 @@ body {
   font-weight: 400;
   font-display: swap;
 }
+@font-face {
+  font-family: "courbd";
+  src: url("./fonts/courbd.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 /**********************SCREEN***********************************/
 .screen {
   position: relative;
@@ -52,7 +59,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 36px;
   padding: 0 8px 0 2px;
   background-color: #D4CABF;
   border-top: 2px solid #FFFFFF;
@@ -71,7 +78,7 @@ body {
   gap: 8px;
   position: static;
   width: auto;
-  height: 41px;
+  height: 31px;
   padding: 0 10px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -96,9 +103,9 @@ body {
 .NavigationBarOpeningBoutton p {
   margin: 0;
   color: black;
-  font-family: "PixelOperatorMono";
+  font-family: "courbd";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   white-space: nowrap;
 }
 
@@ -124,7 +131,7 @@ body {
 .BatteryPart p {
   margin: 0;
   color: black;
-  font-family: "PixelOperatorMono";
+  font-family: "courbd";
   font-weight: bold;
   font-size: 20px;
   white-space: nowrap;
@@ -138,7 +145,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	bottom: 44px;
+	bottom: 33px;
 	width: 21%;
 	height: 265px;
 	padding: 0 3px 0 1px;
@@ -167,6 +174,9 @@ body {
               inset -1px -1px 0 #A49C91;
   box-sizing: border-box;
 }
+.NavigationScrollingMenu > div:not(.OnlineMenuSection):hover {
+  background-color: #1d7945;
+}
 .NavigationScrollingMenu img:not(.OnlineMenuSection) {
   height: 72%;
   margin-left: 10px;
@@ -175,9 +185,9 @@ body {
 .NavigationScrollingMenu > div> p {
   margin: 0;
   color: black;
-  font-family: "PixelOperatorMono";
+  font-family: "courbd";
   font-weight: bold;
-  font-size: 19px;
+  font-size: 16px;
   white-space: nowrap;
   margin-left: 18px;
   margin-top: 10px;
@@ -223,7 +233,7 @@ body {
 .AvatarPhotoAndNameAndOnlineStatus > p {
   margin: 0;
   color: black;
-  font-family: "PixelOperatorMono";
+  font-family: "courbd";
   font-weight: bold;
   font-size: 18px;  
   white-space: nowrap;
