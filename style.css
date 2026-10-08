@@ -29,7 +29,7 @@ body {
   font-display: swap;
 }
 @font-face {
-  font-family: "courbd";
+  font-family: "courdb";
   src: url("./fonts/courbd.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -103,7 +103,7 @@ body {
 .NavigationBarOpeningBoutton p {
   margin: 0;
   color: black;
-  font-family: "courbd";
+  font-family: "PixelOperatorMono";
   font-weight: bold;
   font-size: 16px;
   white-space: nowrap;
@@ -131,7 +131,7 @@ body {
 .BatteryPart p {
   margin: 0;
   color: black;
-  font-family: "courbd";
+  font-family: "PixelOperatorMono";
   font-weight: bold;
   font-size: 20px;
   white-space: nowrap;
@@ -185,7 +185,7 @@ body {
 .NavigationScrollingMenu > div> p {
   margin: 0;
   color: black;
-  font-family: "courbd";
+  font-family: "PixelOperatorMono";
   font-weight: bold;
   font-size: 16px;
   white-space: nowrap;
@@ -233,7 +233,7 @@ body {
 .AvatarPhotoAndNameAndOnlineStatus > p {
   margin: 0;
   color: black;
-  font-family: "courbd";
+  font-family: "PixelOperatorMono";
   font-weight: bold;
   font-size: 18px;  
   white-space: nowrap;
