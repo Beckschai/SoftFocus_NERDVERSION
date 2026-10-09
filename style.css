@@ -173,6 +173,7 @@ body {
   box-shadow: inset 1px 1px 0 #EEE8DF,
               inset -1px -1px 0 #A49C91;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .NavigationScrollingMenu > a:hover {
   background-color: #1d7945;
