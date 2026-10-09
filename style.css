@@ -140,14 +140,14 @@ body {
 
 /***************SCROLLING MENU******************/
 
-.NavigationScrollingMenu {
+ .NavigationScrollingMenu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	bottom: 22px;
-	width: 5%;
-	height: 178px;
+	bottom: 33px;
+	width: 21%;
+	height: 265px;
 	padding: 0 3px 0 1px;
 	background-color: #D4CABF;
 	border-top: 2px solid #FFFFFF;
@@ -156,9 +156,8 @@ body {
 	border-bottom: 2px solid #77736C;
 	box-shadow: inset 1px 1px 0 #EEE8DF, inset -1px -1px 0 #A49C91;
 	box-sizing: border-box;
-	cursor: pointer;
+  cursor: pointer;
 }
-
 
 .NavigationScrollingMenu > a {
 
