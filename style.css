@@ -147,14 +147,15 @@ body {
 /***************SCROLLING MENU******************/
 
 
+
 .NavigationScrollingMenu {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
 	position: absolute;
 	bottom: 33px;
-	 width: var(--largeur-menu);
-	height: 177px;
+	width: var(--largeur-menu);
+	height: 52px;
 	padding: 0 3px 0 1px;
 	background-color: #D4CABF;
 	border-top: 2px solid #FFFFFF;
